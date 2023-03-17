@@ -2,7 +2,7 @@ export class Stack {
     private _size : number = 0
 
     isEmpty (): boolean {
-        return true
+        return !this._size
     }
 
     size (): number{
