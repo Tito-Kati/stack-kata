@@ -15,8 +15,16 @@ describe('Stack', () => {
         expect(stack.size()).toBe(0)
     });
 
-    it('should return one when push one time', () => {
+    it('should return one when pushed one time', () => {
         stack.push('foo')
         expect(stack.size()).toBe(1)
     });
+    it('should return three when pushed three times', () => {
+        stack.push('foo')
+        stack.push('faa')
+        stack.push('fuu')
+        expect(stack.size()).toBe(3)
+    });
+
+
 });

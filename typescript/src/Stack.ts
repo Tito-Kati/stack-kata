@@ -10,6 +10,6 @@ export class Stack {
     }
 
     push (foo: any) {
-        this._size = 1
+        this._size++
     }
 }
