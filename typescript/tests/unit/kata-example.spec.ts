@@ -1,5 +1,9 @@
-describe('kata-setup', () => {
-    it('example test', () => {
-        expect(true).toBeTruthy();
+import { Stack } from '../../src/Stack'
+
+describe('Stack', () => {
+    it('should be empty when initialized', () => {
+        const stack = new Stack()
+
+        expect(stack.isEmpty()).toBe(true)
     });
 });
