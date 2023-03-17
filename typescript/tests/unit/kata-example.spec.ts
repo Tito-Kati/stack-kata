@@ -11,6 +11,11 @@ describe('Stack', () => {
         expect(stack.isEmpty()).toBe(true)
     });
 
+    it('should not be empty when pushed on time', () => {
+        stack.push('foo')
+        expect(stack.isEmpty()).toBe(false)
+    })
+
     it('should return zero when initialized', () => {
         expect(stack.size()).toBe(0)
     });
@@ -19,6 +24,7 @@ describe('Stack', () => {
         stack.push('foo')
         expect(stack.size()).toBe(1)
     });
+
     it('should return three when pushed three times', () => {
         stack.push('foo')
         stack.push('faa')
