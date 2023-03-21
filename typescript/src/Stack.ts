@@ -16,6 +16,9 @@ export class Stack {
     }
 
     peek() {
+        if (this.isEmpty()) {
+            throw new Error('the stack is empty')
+        }
         return this._element
     }
 }
