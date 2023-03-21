@@ -34,6 +34,11 @@ describe('Stack', () => {
             stack.push('fuu')
             expect(stack.size()).toBe(3)
         })
+        it('should return zero when pushed one time and pop one', () => {
+            stack.push('foo')
+            stack.pop()
+            expect(stack.size()).toBe(0)
+        })
     })
 
     describe('peek', () => {

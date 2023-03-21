@@ -21,4 +21,8 @@ export class Stack {
         }
         return this._element
     }
+
+    pop() {
+
+    }
 }
