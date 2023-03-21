@@ -41,5 +41,10 @@ describe('Stack', () => {
             stack.push('foo')
             expect(stack.peek()).toBe('foo')
         });
+        it('should return last pushed element after multiple pushes', function () {
+            stack.push('foo')
+            stack.push('faa')
+            expect(stack.peek()).toBe('faa')
+        });
     })
 })
