@@ -47,5 +47,9 @@ describe('Stack', () => {
             stack.push('faa')
             expect(stack.peek()).toBe('faa')
         })
+
+        it('should throw underflow error when the stack is empty', function () {
+            expect(() => stack.peek()).toThrowError('the stack is empty')
+        })
     })
 })
