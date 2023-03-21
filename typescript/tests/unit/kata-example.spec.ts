@@ -12,7 +12,7 @@ describe('Stack', () => {
             expect(stack.isEmpty()).toBe(true)
         })
 
-        it('should not be empty when pushed on time', () => {
+        it('should not be empty when pushed one time', () => {
             stack.push('foo')
             expect(stack.isEmpty()).toBe(false)
         })
@@ -34,10 +34,18 @@ describe('Stack', () => {
             stack.push('fuu')
             expect(stack.size()).toBe(3)
         })
-        it('should return zero when pushed one time and pop one', () => {
+
+        it('should return zero when pushed one time and popped one', () => {
             stack.push('foo')
             stack.pop()
             expect(stack.size()).toBe(0)
+        })
+
+        it('should return one when pushed two times and popped one', () => {
+            stack.push('foo')
+            stack.push('faa')
+            stack.pop()
+            expect(stack.size()).toBe(1)
         })
     })
 
