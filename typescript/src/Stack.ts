@@ -12,4 +12,8 @@ export class Stack {
     push (foo: any) {
         this._size++
     }
+
+    peek() {
+        return 'foo';
+    }
 }
