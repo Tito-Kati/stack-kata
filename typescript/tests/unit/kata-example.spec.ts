@@ -48,7 +48,7 @@ describe('Stack', () => {
             expect(stack.size()).toBe(1)
         })
 
-        it('should return one when pushed two times and popped one', () => {
+        it('should return two when pushed three times and popped one', () => {
             stack.push('foo')
             stack.push('faa')
             stack.push('fuu')

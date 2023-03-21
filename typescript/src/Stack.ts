@@ -23,11 +23,6 @@ export class Stack {
     }
 
     pop(): void {
-        if (this._size == 2) {
-            this._size = 1
-            return
-        }
-
-        this._size = 0;
+        this._size--
     }
 }
