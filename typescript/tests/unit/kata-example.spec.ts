@@ -1,4 +1,4 @@
-import {Stack} from '../../src/Stack'
+import { Stack } from '../../src/Stack'
 
 describe('Stack', () => {
     let stack: Stack
@@ -37,18 +37,18 @@ describe('Stack', () => {
     })
 
     describe('peek', () => {
-        it('should return last pushed element', function () {
+        it('should return last pushed element',  () => {
             stack.push('foo')
             expect(stack.peek()).toBe('foo')
         })
 
-        it('should return last pushed element after multiple pushes', function () {
+        it('should return last pushed element after multiple pushes', () => {
             stack.push('foo')
             stack.push('faa')
             expect(stack.peek()).toBe('faa')
         })
 
-        it('should throw underflow error when the stack is empty', function () {
+        it('should throw underflow error when the stack is empty', () => {
             expect(() => stack.peek()).toThrowError('the stack is empty')
         })
     })
