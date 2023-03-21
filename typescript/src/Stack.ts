@@ -23,6 +23,6 @@ export class Stack {
     }
 
     pop() {
-        this._size = 0;
+        this._size--;
     }
 }
