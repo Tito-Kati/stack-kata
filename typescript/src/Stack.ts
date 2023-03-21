@@ -1,19 +1,21 @@
 export class Stack {
-    private _size : number = 0
+    private _size: number = 0
+    private _element: any
 
-    isEmpty (): boolean {
+    isEmpty(): boolean {
         return !this._size
     }
 
-    size (): number{
+    size(): number {
         return this._size
     }
 
-    push (foo: any) {
+    push(element: any) {
+        this._element = element
         this._size++
     }
 
     peek() {
-        return 'foo';
+        return this._element
     }
 }
